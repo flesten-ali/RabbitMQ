@@ -8,7 +8,7 @@ public class ServerConfigration
     {
         try
         {
-            var config = JsonSerializer.Deserialize<StatisticsConfig>(File.ReadAllText("C:\\Users\\User\\Desktop\\RabbitTutorial\\RabbitExercise\\Rabbit\\appsettings.json"));
+            var config = JsonSerializer.Deserialize<StatisticsConfig>(File.ReadAllText("appsettings.json"));
             return new ServerStatisticsConfig
             {
                 SamplingIntervalSeconds = config.ServerStatisticsConfig.SamplingIntervalSeconds,
